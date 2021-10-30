@@ -28,7 +28,7 @@ ax.set_xlabel('respondent')
 ax.set_ylabel('borrowing')
 
 lightgrey_patch = mpatches.Patch(color='lightgrey', label='en')
-darkgrey_patch = mpatches.Patch(color='darkgrey', label='ett')
-plt.legend(handles=[lightgrey_patch, darkgrey_patch], loc="lower right")
+dimgrey_patch = mpatches.Patch(color='dimgrey', label='ett')
+plt.legend(handles=[lightgrey_patch, dimgrey_patch], loc="lower right")
 
 plt.show()
