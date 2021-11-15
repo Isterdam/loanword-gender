@@ -20,15 +20,15 @@ ax.imshow(data, cmap=cmap, norm=norm)
 # draw gridlines
 ax.grid(which="minor")
 ax.tick_params(which="minor", size=0)
-ax.set_yticks(range(len(words)));
-ax.set_yticklabels(list(ett_count.keys()), rotation='horizontal', fontsize=8)
+ax.set_yticks(range(len(set(words))));
+ax.set_yticklabels(list(ett_count.keys()), rotation='horizontal', fontsize=7)
 ax.set_xticks(range(len(sorted_answers)));
-ax.set_xticklabels(list(sorted_answers.keys()), rotation='vertical', fontsize=6)
+ax.set_xticklabels(list(sorted_answers.keys()), rotation='vertical', fontsize=5.6)
 ax.set_xlabel('respondent')
 ax.set_ylabel('borrowing')
 
-lightgrey_patch = mpatches.Patch(color='lightgrey', label='en')
-dimgrey_patch = mpatches.Patch(color='dimgrey', label='ett')
+lightgrey_patch = mpatches.Patch(color='lightgrey', label='un')
+dimgrey_patch = mpatches.Patch(color='dimgrey', label='una')
 plt.legend(handles=[lightgrey_patch, dimgrey_patch], loc="lower right")
 
 plt.show()
